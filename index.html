@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katana Core</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: -0.05em;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #404040 50%, transparent 100%);
+        }
+
+        .github-link {
+            display: block;
+            text-align: center;
+            color: #8a8a8a;
+            text-decoration: none;
+            font-weight: 300;
+            margin: 2rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .github-link:hover {
+            color: #e0e0e0;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: #252525;
+            margin: 2rem 0;
+        }
+
+        .app-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .app-item {
+            margin: 1.5rem 0;
+        }
+
+        .app-link {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .app-link:hover {
+            background-color: #1a1a1a;
+            transform: translateX(10px);
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1 class="title">KATANA-CORE</h1>
+
+    <a href="https://github.com/voildzero" class="github-link" target="_blank">
+        Developer Github Profile
+    </a>
+
+    <div class="divider"></div>
+
+    <ul class="app-list">
+
+        <li class="app-item">
+            <a href="#" class="app-link">Katana-Sherlock v1.4</a>
+        </li>
+
+    </ul>
+</div>
+</body>
+</html>
